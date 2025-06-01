@@ -151,7 +151,7 @@ if st.session_state.run_phase == "awaiting_feedback":
         st.subheader(f"Drafted Section Title: {title} (Version {version})")
         st.write(section_draft)
         show_progress()
-    st.subheader("✏️ Agent Feedback Required")
+    st.subheader("✏️ Human Feedback Required")
     st.info(st.session_state.interrupt_message)
     st.session_state.feedback_input = st.text_area("Enter your feedback (or type 'approved')")
 
